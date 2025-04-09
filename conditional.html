@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statement</title>
+</head>
+<body>
+    
+    <script>
+        // if statement
+       /*  let voterage=20;
+        if(voterage>=20){
+            alert("valid to cast the vote");
+        }
+        document.write("thanks"); */
+       /*  if else  statement*/
+       /* let marks= prompt("ENter your number");
+       if(marks>=35){
+        document.write("you are passed");
+
+       }
+       else{
+        document.write("you are fail");
+       } */
+      /*  if else if else */
+      /* let grademarks=prompt(" enter tour grade marks");
+      if(grademarks>=35 && grademarks<50){
+        document.write("Grade C");
+      }
+      else if (grademarks>=50 && grademarks<80){
+        document.write("Grade B");
+      }
+      else if(grademarks>=80){
+        document.write("Grade A");
+      }
+        else{
+        
+         document.write("fail");
+        } */
+      // write a program to check a given numberbis odd or even if number is even then print table of even numbe
+      /* 2 wap to dispaly greeting of the day  as per the clock hours
+      3 wap to check whether it is hot or cold as per the tempetature */
+     /*  let number=prompt("Enter the number");
+      if(number%2==0){
+        document.write("even"+"<br>");
+        i=0;
+        for( i=1;i<=10;i++){
+        document.write (number*i+ "<br>");
+      }
+    }
+      else{
+        document.write("odd");
+      } */
+      /* for loop 
+      initialization ,condition,then increment*/
+      /* let student={
+        fname:"25",
+        age:"18",
+        mob:56451545,
+       
+        email:" sv456121@gmail.com",
+        isCourseDone:false
+      };
+      /* document.write(student.fname); */
+     /*  for(x in student){
+        document.write(student[x]+"<br>")
+      }
+     */ 
+    // for loop in js//
+    /* let student=["js1","js2","js3","js4","js5"];
+    for(let i=o;i<student.length;i++){
+        document.write(student[i]+"<br>");
+    } */
+   // for of loop
+  /*  let studentName=["js1","js2","js3","js4","js5"];
+   for(x of studentName){
+    
+   } */
+// for of loop over string
+/* let course="Javascript";
+for(x of course){
+    document.write(x+"<br>");
+
+} */
+// wap to dispaly day of the week as per  the given inputbnumber
+//wap to add first name and last name to the given array
+// wap to find double or square root for the given odd or even number  respectively
+/* let i=prompt("Enter the number");
+    if(i==0){
+        document.write("Sunday");
+
+    }
+    else if(i==1){
+        document.write("Monday");
+    }
+    else if(i==2){
+    document.write("Tuesday");
+
+}
+else if(i==3){
+    document.write("Wednesday");
+}
+else if(i==4){
+    document.write("Thursday");
+}
+else if(i==5){
+    document.write("Friday");
+}
+else if(i==6){
+    document.write("Sunyday");
+}
+else{
+    document.write("invalid day")
+} */
+ /* let num=prompt("etnter the number");
+ if(num%2==0){
+    document.write(Math.sqrt(num))
+ }
+ else{
+    document.write(2*num)
+ }
+ */
+////////// Math.sqrt function is used to find the square root of the number in java script/////
+/// wap to count vowels in string 
+/// wap to find prime number between 1 to 100 
+/// wap to eheckthat enter mobile number  is valid or not
+// wap to check entered name and email id is valid or not
+let str=prompt("ENTER THE STRING");
+for(i in str){
+    if(i=="a"|| i=="e"||i=="i"||i=="o"||i=="u"){
+        i++;
+    
+    }
+document.write(i++);
+    }
+
+   </script>
+</body>
+</html>
+function validateEmail(email) {
+  let res = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  return res.test(email);
+}
+function validate() {
+  let result = $("#result");
+  let email = $("#email").val();
+  result.text("");
+  if(validateEmail(email)) {
+    result.text(email + " is valid");
+    result.css("color", "blue");
+  } else {
+    result.text(email + " is not valid");
+    result.css("color", "red");
+  }
+  return false;
+}
+$("#validate").on("click", validate);

@@ -1,0 +1,33 @@
+  java script is cross pateform ,object based  scripting language for client and server application it is used every where
+ loosely typed language
+ interpreted at just  in compile (runtime )rather than compile time
+ can be embadded within HTML COMMONLY ARE USED TO ADD functionaly to a we
+ high level  and multi paradigm
+Features(
+extends functionality of web page
+written in the HTML DOCUMENT 
+controlpage element 
+react to user action 
+plateform independent 
+object oriented 
+validating  data written in html)
+# errors in java script
+1 Syantax error: this occur when there is a mistake in the syantax of the code it prevent the script  frombeing  passed and executed for
+ varx=5
+ console.log(x;
+ \\missing ) after argument list
+  2 reference error: thi shappen when code refers to variable that dose not exist  For example  console.log(nonExistent Varible)
+  \\ non EdixtenceVariable is not  defined
+  3 Type error: this occuir when a value is not of the  expected type : For example 
+  var num=5; num.toUppercase();
+  \\num.toUppercase is not a Function
+  
+###JS Variable type assigning###
+ Note:both let and const do not participate in hoisting pahse maean  will not be available in window even can not 
+ #####
+find the sum of all subject  mark.
+find the average of each sem mark .
+find the subject which have greater than 60 and count the subject per sem
+find the subject inwhich you are fail mean have less tham 30 marks per sem 
+
+ #####
