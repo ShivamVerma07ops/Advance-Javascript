@@ -1,8 +1,18 @@
-let x = "global";
-    // function doingstuff(){
-    //     let x = "local";
-    //     console.log(x);
+function logRecursive(nr){
+//     console.log("Started function",nr);
 
-    // }
-    // doingstuff();
-    // console.log(x);
+       
+//         if(nr>0){
+
+//         logRecursive(nr-1);
+    
+//     }
+//     else{
+//         console.log("done with recursion");
+        
+
+//     }
+//     console.log("Ended fun ",nr);
+//     }
+//     logRecursive(3);
+

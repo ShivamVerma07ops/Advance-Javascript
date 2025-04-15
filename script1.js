@@ -273,4 +273,70 @@
 
 
 
+//**********date 15/04/25************************************************************** */
+// function getRecursive(nr){
+
+//         if(nr>0){
+//         getRecursive(--nr);
+    
+//     }
+//     console.log(nr);
+//     }
+//     getRecursive(3);
+
+/// next
+//the performance of recursion is slower then the  iteration
+    
+////NESTED FUNCTION///////////////////////////////////
+//  function doOuterFunctionStuff(nr){
+//     console.log("outer function");
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         console.log(x+7);
+//         console.log("I can access the outer function")
+//     }
+//  }
+//  doOuterFunctionStuff(5);
+
+
+/// next
+// function doOuterFunctionStuff(nr){
+//         doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         let z = 10;
+
+//     }
+//  }
+//  doInnerFunctionStuff(5);
+
+
+
+///// ANONYMOYUS FUNCTION  function call backs
+// let functionVariable = function(){
+//     console.log("not so secret through")
+// };
+//  functionVariable();
+
+
+// function doFlexibleStuff(executeStuff){
+//     executeStuff();
+//     console.log("inside diflexiblefunction");
+
+// }
+// doFlexibleStuff();
+
+/// next   to take time to run the program example 1000 milisecond
+// let youGotThis = function(){
+//     console.log("you are doing well keep counting");
+
+// };
+// //setTimeout(youGotThis,100);
+// setInterval(youGotThis,1000);
+
+///next
+let testfunction=function(){
+    console.log("hello")
+}();
+
+
 
