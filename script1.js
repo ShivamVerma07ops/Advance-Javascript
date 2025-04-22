@@ -334,9 +334,11 @@
 // setInterval(youGotThis,1000);
 
 ///next
-let testfunction=function(){
-    console.log("hello")
-}();
+// let testfunction=function(){
+//     console.log("hello")
+// }();
+
+///next
 
 
 

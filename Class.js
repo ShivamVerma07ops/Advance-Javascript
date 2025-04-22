@@ -50,25 +50,95 @@
 
 
 /////METHODS*************************** FUNCTION ON A CLASS IS CALLED METHODS
-class Person {
-            constructor(firstname,lastname){
-                this.firstname = firstname;
-                this.lastname = lastname;
+// class Person {
+//             constructor(firstname,lastname){
+//                 this.firstname = firstname;
+//                 this.lastname = lastname;
         
-            }
-        greet(){
-            console.log("hi there i am", this.firstname );
+//             }
+//         greet(){
+//             console.log("hi there i am", this.firstname );
 
 
 
-        }
+//         }
+//     }
+//     let p = new Person ("  shivam ", "verma");
+//     p.greet();
+
+
+   // / what is instance variable ans= it is a  object
+
+   /// /AbstractRange= hiding unnecesary object/detail
+
+/// complement method
+//    class Person {
+//     constructor(firstname,lastname){
+//         this.firstname = firstname;
+//         this.lastname = lastname;
+
+//     }
+
+// greet(){
+//     console.log("hi there i am",this.firstname);
+
+
+// }
+// compliment(name,object){
+//     return "That is a wonderful"+ object+" ,"+name;
+// }
+// }
+// let p= new Person("shivam","verma");
+// p.greet();
+// let compliment= p.compliment("Harry","hat");
+// console.log(compliment);
+
+
+///privata attribute
+// class Person{
+//     #firstname;
+//     #lastname;
+
+// constructor(firstname,lastname){
+//     this. #firstname= firstname;
+//     this.lastname = lastname;
+
+// }
+// }
+// let p= new Person("shivam","verma");
+// console.log(p.firstname);
+
+// constructor(firstname,lastname){
+//     if(firstname.startwith("N")){
+
+//     }
+//        this. #firstname= firstname;
+    //     this.lastname = lastname;
+//// get method ////////////////////////
+class Person{
+        #firstname;
+        #lastname;
+    
+    constructor(firstname,lastname){
+        this. #firstname= firstname;
+        this.lastname = lastname;
+    
     }
-    let p = new Person ("  shivam ", "shashankn");
-    p.greet();
-
-
-
-
-
-
-
+    get firstname(){
+        return this.#firstname;
+    }
+    set firstname(firstname){
+        this.#firstname=firstname;
+    }
+    get lastname(){
+        return this.#lastname;
+    }
+    set lastname(lastname){
+        this.#lastname=lastname;
+    }
+    }
+    let p= new Person("shivam","verma");
+    console.log(p.firstname);
+    p.firstname="hello";
+    console.log(p.firstname);
+    console.log(p);
