@@ -179,24 +179,99 @@
 
 ///// PROTOTYPE /////////
 ///next
-class Person {
-                constructor(firstname,lastname){
-                    this.firstname = firstname;
-                    this.lastname = lastname;
+// class Person {
+//                 constructor(firstname,lastname){
+//                     this.firstname = firstname;
+//                     this.lastname = lastname;
             
-                }
-            greet(){
-                console.log("hi there i am" );
+//                 }
+//             greet(){
+//                 console.log("hi there i am" );
     
-            }
+//             }
     
-            }
-            Person.prototype.introduce=function(){
-                console.log("hi i am ",this.firstname)
-            };
+//             }
+//             Person.prototype.introduce=function(){
+//                 console.log("hi i am ",this.firstname)
+//             };
 
-        Person.prototype.favcolor="green";
+//         Person.prototype.favcolor="green";
 
-        let p = new Person ("  shivam ", "verma");
-        console.log(p.favcolor);
-        p.introduce();
+//         let p = new Person ("  shivam ", "verma");
+//         console.log(p.favcolor);
+// 
+// ///        p.introduce();
+// next
+
+// const fruits = new Map([
+//     ["apples", 500],
+//     ["banana", 300],
+//     ["orange" , 200]
+// ]);
+
+
+//// next
+
+//  const fruits= new Map();
+// // set map values
+// / fruits.set("apples",500);
+// // fruits.set("banana",300);
+// fruits.set("orange",102);
+// // console.log(fruits);
+// console.log(fruits.size);
+//fruits.delete("apples");
+//fruits.clear();
+
+// /// return object ** type of fruit.
+
+///Map.has() for checking   give true and false
+
+// console.log(fruits.has("apples"));
+// let text = "";
+// fruits.forEach(function(value , key){
+//     text += key + '=' +value;
+// })
+// console.log(text);
+
+
+/// Map.endies();
+// let text = "";
+// for(const x of fruits.entries()){
+//     text += x;
+// }
+// console.log(text);
+
+
+// //next
+// let text = "";
+// for(const x of fruits.keys()){
+//     text += x;
+// }
+// console.log(text);
+
+
+
+//next
+// let text = "";
+// for(const x of fruits.values()){
+//     text += x;
+// }
+// console.log(text);
+/// sumof all
+// let total =0;
+// for(const x of fruits.values()){
+//     total+= x;
+// }
+// console.log(total);
+
+/// next
+
+const apples ={name:'Apple'};
+const banana ={name:'Banana'};
+const grapes ={name:'Grapes'};
+/// creat a map
+const fruits=new Map();
+fruits.set=(apples,500);
+fruits.set=(banana,300);
+fruits.set=(grapes,100);
+console.log(fruits.get("apples"));
